@@ -20,4 +20,4 @@ chmod $permissionsNum "$file"
 # Using the ls command to list contents of the directory, including the modified permissions
 ls -l
 
-# Resources used: https://bard.google.com/chat/78c8bcf10dc27f25
+# Resources used: https://g.co/bard/share/682b3b316fc6
