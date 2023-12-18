@@ -10,20 +10,20 @@ Import-Module ActiveDirectory
 # This block lists all of Franz's information
 $firstName = "Franz"
 $lastName = "Ferdinand"
-$displayName = "$firstName $lastName"
-$samaccountname = "$lastName$firstName"
+$displayName = "$Franz $Ferdinand"
+$samaccountname = "$Ferdinand$Franz"
 $email = "ferdi@GlobeXpower.com"
 $department = "TPS"
 $office = "Springfield, OR"
 $container = "OU=TPS,OU=Departments,DC=GlobeXUSA,DC=com"
 
 # This line creates the new user by using the "New-ADUser" command
-New-ADUser -Name $displayName -SamAccountName $samaccountname -UserPrincipalName "$samaccountname@GlobeXUSA.com" -GivenName $firstName -Surname $lastName -EmailAddress $email -Department $department -OfficeLocation $office -Path $container -PasswordNotRequired
+New-ADUser -Name $Franz Ferdinand -FerdinandFranz $FerdinandFranz -UserPrincipalName "$samaccountname@GlobeXUSA.com" -GivenName $firstName -Surname $lastName -EmailAddress $email -Department $department -OfficeLocation $office -Path $container -PasswordNotRequired
 
 # This line sets a random passowrd for the user
-Set-ADUser -Identity $displayName -ChangePasswordOnFirstLogon $true
+Set-ADUser -Identity $Franz Ferdinand -ChangePasswordOnFirstLogon $true
 
 # This line writes the confirmation message
-Write-Host "User '$displayName' created successfully in AD."
+Write-Host "User '$Franz Ferdinand' created successfully in AD."
 
 # Resource used: https://g.co/bard/share/010177f58f5a
