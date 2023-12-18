@@ -54,4 +54,154 @@ print("\nResponse headers:")
 for key, value in response.headers.items():
     print(f"  {key}: {value}")
 
+# Resource used: import requests
+
+# Prompt user for URL
+url = input("Enter destination URL: ")
+
+# Display menu and get user's choice for HTTP method
+methods = ["GET", "POST", "PUT", "DELETE", "HEAD", "PATCH", "OPTIONS"]
+print("Select HTTP method:")
+for i, method in enumerate(methods):
+    print(f"{i+1}. {method}")
+
+try:
+    method_choice = int(input()) - 1
+    method = methods[method_choice]
+except ValueError:
+    print("Invalid selection. Please enter a number between 1 and 7.")
+    exit()
+
+# Print the request details and confirm with user
+print(f"\nPreparing request:")
+print(f"  URL: {url}")
+print(f"  Method: {method}")
+print("Press Enter to continue or Ctrl+C to cancel.")
+input()
+
+# Send the request with the chosen method using requests library
+response = requests.request(method, url)
+
+# Translate and print response status code
+status_code = response.status_code
+status_msg = {
+    200: "OK",
+    301: "Moved Permanently",
+    302: "Found (Redirected)",
+    400: "Bad Request",
+    401: "Unauthorized",
+    403: "Forbidden",
+    404: "Not Found",
+    405: "Method Not Allowed",
+    500: "Internal Server Error",
+}.get(status_code, f"Unknown error ({status_code})")
+
+print(f"\nResponse status: {status_msg}")
+
+# Print response headers
+print("\nResponse headers:")
+for key, value in response.headers.items():
+    print(f"  {key}: {value}")
+
+# Resources used: import requests
+
+# Prompt user for URL
+url = input("Enter destination URL: ")
+
+# Display menu and get user's choice for HTTP method
+methods = ["GET", "POST", "PUT", "DELETE", "HEAD", "PATCH", "OPTIONS"]
+print("Select HTTP method:")
+for i, method in enumerate(methods):
+    print(f"{i+1}. {method}")
+
+try:
+    method_choice = int(input()) - 1
+    method = methods[method_choice]
+except ValueError:
+    print("Invalid selection. Please enter a number between 1 and 7.")
+    exit()
+
+# Print the request details and confirm with user
+print(f"\nPreparing request:")
+print(f"  URL: {url}")
+print(f"  Method: {method}")
+print("Press Enter to continue or Ctrl+C to cancel.")
+input()
+
+# Send the request with the chosen method using requests library
+response = requests.request(method, url)
+
+# Translate and print response status code
+status_code = response.status_code
+status_msg = {
+    200: "OK",
+    301: "Moved Permanently",
+    302: "Found (Redirected)",
+    400: "Bad Request",
+    401: "Unauthorized",
+    403: "Forbidden",
+    404: "Not Found",
+    405: "Method Not Allowed",
+    500: "Internal Server Error",
+}.get(status_code, f"Unknown error ({status_code})")
+
+print(f"\nResponse status: {status_msg}")
+
+# Print response headers
+print("\nResponse headers:")
+for key, value in response.headers.items():
+    print(f"  {key}: {value}")
+
+import requests
+
+# Prompt user for URL
+url = input("Enter destination URL: ")
+
+# Display menu and get user's choice for HTTP method
+methods = ["GET", "POST", "PUT", "DELETE", "HEAD", "PATCH", "OPTIONS"]
+print("Select HTTP method:")
+for i, method in enumerate(methods):
+    print(f"{i+1}. {method}")
+
+try:
+    method_choice = int(input()) - 1
+    method = methods[method_choice]
+except ValueError:
+    print("Invalid selection. Please enter a number between 1 and 7.")
+    exit()
+
+# Print the request details and confirm with user
+print(f"\nPreparing request:")
+print(f"  URL: {url}")
+print(f"  Method: {method}")
+print("Press Enter to continue or Ctrl+C to cancel.")
+input()
+
+# Send the request with the chosen method using requests library
+response = requests.request(method, url)
+
+# Translate and print response status code
+status_code = response.status_code
+status_msg = {
+    200: "OK",
+    301: "Moved Permanently",
+    302: "Found (Redirected)",
+    400: "Bad Request",
+    401: "Unauthorized",
+    403: "Forbidden",
+    404: "Not Found",
+    405: "Method Not Allowed",
+    500: "Internal Server Error",
+}.get(status_code, f"Unknown error ({status_code})")
+
+print(f"\nResponse status: {status_msg}")
+
+# Print response headers
+print("\nResponse headers:")
+for key, value in response.headers.items():
+    print(f"  {key}: {value}")
+
+# Resource used: https://g.co/bard/share/62e92a6f75b7
+
+
 
