@@ -40,4 +40,6 @@ with open(file_path, "r") as file:
 
 os.remove(file_path)
 
-Resources used: https://g.co/bard/share/394efc0e7fa3
+# Resources used: https://g.co/bard/share/394efc0e7fa3
+
+# Resources used: https://g.co/bard/share/394efc0e7fa3

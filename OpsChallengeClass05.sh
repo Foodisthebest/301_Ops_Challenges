@@ -44,4 +44,11 @@ echo "Reduction: $syslog_reduction%"
 echo ""
 echo "Original wtmp size: $wtmp_size bytes"
 echo "Compressed wtmp size: $wtmp_compressed_size bytes"
+
 echo "Reduction: $wtmp_reduction%"
+
+echo "Reduction: $wtmp_reduction%"
+
+# This is my source
+https://g.co/bard/share/c993047ee01b
+

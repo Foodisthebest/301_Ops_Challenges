@@ -30,3 +30,6 @@ print(system_info)
 print("\nThanks for looking at me!")
 
 # Rescources used: https://g.co/bard/share/9036404cd2f8
+
+# Rescources used: https://g.co/bard/share/9036404cd2f8
+

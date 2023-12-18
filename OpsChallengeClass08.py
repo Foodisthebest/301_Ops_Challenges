@@ -27,4 +27,8 @@ my_list[6] = "onion"
 # Print entire list
 print(my_list)
 
+
 # Resources used: https://g.co/bard/share/4a41e35f1987
+
+# Resources used: https://g.co/bard/share/4a41e35f1987
+

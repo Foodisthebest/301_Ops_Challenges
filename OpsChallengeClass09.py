@@ -55,4 +55,8 @@ if jynx <= 500:
 elif pikachu > 500:
   print("Pikachu is way younger than Jynx.")
 else:
+
   print("All my pokemon are younger than 1000 years old.")
+
+  print("All my pokemon are younger than 1000 years old.")
+
